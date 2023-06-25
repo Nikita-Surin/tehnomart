@@ -127,7 +127,23 @@
             <a class="link link-slider" href="#">Открыть каталог</a>
           </div>
           <div class="slider-pagination-container">
-            <ol></ol>
+            <ol class="clear-list slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="button slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 товар.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="button slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 товар.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="button slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 товар.</span>
+                </button>
+              </li>
+            </ol>
           </div>
         </div>
         <div class="submenu-card card-discounts card-green">
@@ -171,7 +187,7 @@
         <div class="contacts-container">
           <h3 class="contacts-title">Контакты</h3>
           <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a class="link map-link" href="https://yandex.ru/maps/">
+          <a class="link map-link" href="https://yandex.ru/maps">
             <img src="/images/map.jpg" width="500" height="347" alt="Наше местоположения на карте.">
           </a>
         </div>
@@ -179,8 +195,50 @@
     </main>
     <!--подвал сайта-->
     <footer class="page-footer">
-      <div></div>
-      <div></div>
+      <div class="footer-upper-container">
+        <div class="page-footer-container">
+          <div class="left-container">
+            <a class="link page-navigation-link-logo" href="#">
+              <img class="page-navigation-logo" src="/images/logo.svg" width="220" height="50" alt="Логотип «Техномарт».">
+            </a>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+            <ul class="clear-list footer-social-list">
+              <li class="footer-social-item">
+                <a class="link link-social link-social-pinterest" href="https://ru.pinterest.com">
+                  <span class="visually-hidden">Пинтерест.</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="link link-social link-social-vk" href="https://vk.com">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="link link-social link-social-vsco" href="https://www.vsco.co">
+                  <span class="visually-hidden">VSCO.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right-container">
+            <p>Обратная связь:</p>
+            <a class="link" href="#">mail@htmlacademy.ru</a>
+            <div class="subscription-form-container">
+              <span class="subscription-description">Получайте лучшие предложения</span>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="email">Введите ваш e-mail.</label>
+                <input class="input-field" type="email" name="email" id="email" required placeholder="Ваш e-mail">
+                <button class="button subscription-form-button" type="submit" aria-label="Подписаться."></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-lower-container">
+        <div class="page-footer-container">
+          <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+          <p>Разработано — <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -447,9 +447,49 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 2px;
-  background: #EE3643;
+  background-color: #EE3643;
 }
 
 .map-link {
   padding-bottom: 49px;
+}
+
+/* подвал сайта */
+
+.page-footer {
+
+}
+
+.page-footer-container {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-upper-container {
+  padding-bottom: 34px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 220px;
+}
+
+.link-social {
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.1;
+}
+
+.footer-lower-container {
+  color: #ffffff;
+  background-color: #293449;
 }
