@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PT Sans/ptsans-400.woff2") format("woff2"), url("../fonts/PT Sans/ptsans-400.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PT Sans/ptsans-700.woff2") format("woff2"), url("../fonts/PT Sans/ptsans-700.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/PT Sans/ptsans-italic-400.woff2") format("woff2"), url("../fonts/PT Sans/ptsans-italic-400.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Fira Sans/firasans-700.woff2") format("woff2"), url("../fonts/Fira Sans/firasans-700.ttf") format("ttf");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  height: 100%;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
