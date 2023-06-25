@@ -13,21 +13,77 @@
     <!--шапка сайта-->
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин «Техномарт».</h1>
-      <div class="page-header-information-container">
+      <div class="page-header-container page-header-information-container">
         <p class="page-header-information-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <p class="page-header-information-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <div class="contacts-phone-container">
           <a class="link contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
       </div>
-      <div class="page-header">
-        <a class="link page-navigation-link-logo" href="#">
-          <img class="page-navigation-logo" src="#" width="220" height="50" alt="Логотип «Техномарт».">
-        </a>
+      <div class="page-header-user-container">
+        <div class="page-header-container">
+          <a class="link page-navigation-link-logo" href="#">
+            <img class="page-navigation-logo" src="/images/logo.svg" width="220" height="50" alt="Логотип «Техномарт».">
+          </a>
+          <div class="user-search">
+            <div class="user-search-button-container">
+              <button class="button user-search-button" type="button">
+                <!-- <svg></svg> -->
+                <span class="visually-hidden">Поиск.</span>
+              </button>
+            </div>
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <!-- для отображения ошибки поля ввода добавь класс .input-field-error для поля ввода -->
+              <input class="input-field input-field-search" type="search" name="search" aria-label="Поиск по сайту." required placeholder="Поиск по сайту">
+            </form>
+          </div>
+          <button class="button user-access-button" type="button">
+            <!-- <svg></svg> -->
+            Вход
+          </button>
+        </div>
       </div>
-      <div class="page-header">
-        <nav class="page-navigation"></nav>
-        <div class="page-navigation-container"></div>
+      <div class="page-header-navigation-container">
+        <div class="page-header-container">
+          <nav class="page-navigation">
+            <ul class="clear-list page-navigation-list">
+              <li class="page-navigation-item">
+                <a class="link page-navigation-link" href="#">Главная</a>
+              </li>
+              <li class="page-navigation-item">
+                <a class="link page-navigation-link" href="#">Компания</a>
+              </li>
+              <li class="page-navigation-item">
+                <a class="link page-navigation-link" href="#">Каталог</a>
+              </li>
+              <li class="page-navigation-item">
+                <a class="link page-navigation-link" href="#">Новости</a>
+              </li>
+              <li class="page-navigation-item">
+                <a class="link page-navigation-link" href="#">Спецпредложения</a>
+              </li>
+              <li class="page-navigation-item">
+                <a class="link page-navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="page-navigation-item">
+                <a class="link page-navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-bookmarks-button-container">
+            <button class="button user-bookmarks-button" type="button">
+              <!-- <svg></svg> -->
+              <span class="visually-hidden">Закладки.</span>
+            </button>
+          </div>
+          <div class="user-basket-button-container">
+            <button class="button user-basket-button" type="button">
+              <!-- <svg></svg> -->
+              <span class="visually-hidden">Корзина.</span>
+            </button>
+          </div>
+          <button class="button button-order" type="button">Оформить заказ</button>
+        </div>
       </div>
     </header>
   </body>

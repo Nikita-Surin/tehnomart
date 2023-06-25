@@ -45,6 +45,7 @@ body {
   width: 100%;
   min-height: 100%;
   margin: 0 auto;
+  background-color: rgb(183, 183, 183);
 }
 
 *,
@@ -52,3 +53,127 @@ body {
 *::after {
   box-sizing: border-box;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  color: #ffffff;
+}
+
+/* шапка сайта */
+
+.page-header {
+  background-color: #f9f9f9;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.page-header-information-container {
+
+}
+
+.page-header-information-text {
+  margin: 13px 0;
+  color: #EE3643;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.page-header-information-address {
+  margin: 11px 0 15px;
+  color: #32425C;
+  font-size: 14px;
+}
+
+.contacts-phone {
+  color: #293449;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.page-header-user-container {
+  background-color: #293449;
+}
+
+.page-navigation-link-logo {
+  margin-bottom: -5px;
+  width: 220px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.user-search {
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.page-header-navigation-container {
+  background-color: #3d546f;
+}
+
+.page-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.page-navigation-link {
+  padding: 10px;
+}
+
+.button-order {
+  margin: 10px 0 18px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  background: #63a63e;
+  width: 170px;
+  height: 42px;
+  flex-shrink: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* основное содержимое index */
