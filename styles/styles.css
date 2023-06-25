@@ -45,7 +45,7 @@ body {
   width: 100%;
   min-height: 100%;
   margin: 0 auto;
-  background-color: rgb(183, 183, 183);
+  background-color: #ffffff;
 }
 
 *,
@@ -93,6 +93,7 @@ body {
 
 .page-header {
   background-color: #f9f9f9;
+  margin-bottom: 52px;
 }
 
 .page-header-container {
