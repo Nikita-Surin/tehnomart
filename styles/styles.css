@@ -167,6 +167,8 @@ body {
 
 /* основное содержимое index */
 
+/* секция крточек */
+
 .submenu {
   margin: 0 auto;
   max-width: 1170px;
@@ -326,4 +328,84 @@ body {
   border-radius: 4px;
   background: #ee3643;
   color: #ffffff;
+}
+
+/* секция информации */
+
+.information {
+  margin: 50px 0;
+  background: #F4F7F9;
+}
+
+.information-container {
+  margin: 0 auto;
+  padding: 52px 0;
+  max-width: 1170px;
+}
+
+.information-title {
+  margin: 0;
+  font-size: 36px;
+  font-family: "Fira Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #293449;
+}
+
+.information-description {
+  margin: 30px auto 64px;
+  max-width: 556px;
+  font-size: 18px;
+  color: #293449;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.services-card {
+  position: relative;
+  padding: 24px 35px;
+  width: 370px;
+  min-height: 382px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.services-card::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: 31px;
+  width: 90px;
+  height: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-delivery::before {
+  background-image: url("/images/icon-delivery.svg");
+}
+
+.card-guarantee::before {
+  background-image: url("/images/icon-sale.svg");
+}
+
+.card-credit::before {
+  background-image: url("/images/icon-paints.svg");
+}
+
+.services-card-title {
+  margin-top: 136px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #293449;
+}
+.services-card-description {
+  margin: 21px 0 0;
 }
