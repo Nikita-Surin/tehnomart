@@ -409,3 +409,47 @@ body {
 .services-card-description {
   margin: 21px 0 0;
 }
+
+/* секция контактов */
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.contacts-container {
+  width: 500px;
+}
+
+.contacts-title {
+  margin: 2px 0 23px;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #293449;
+}
+
+.contacts-description {
+  margin-bottom: 30px;
+  color: #293449;
+}
+
+.contacts-link {
+  display: block;
+  margin: 0;
+  margin-top: 52px;
+  padding: 14px 45px;
+  max-width: 197px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background: #EE3643;
+}
+
+.map-link {
+  padding-bottom: 49px;
+}
