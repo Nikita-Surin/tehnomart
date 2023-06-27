@@ -102,6 +102,11 @@ body {
   align-items: center;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0;
+}
+
+.page-header-navigation-container .page-header-container {
+  padding: 10px 0 18px;
 }
 
 .page-header-information-text {
@@ -142,10 +147,11 @@ body {
 }
 
 .user-search-button {
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25px;
   height: 25px;
-  background-color: #63a63e;
 }
 
 .input-field-search {
@@ -166,6 +172,7 @@ body {
 }
 
 .page-navigation-list {
+  max-width: 903px;
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
@@ -175,8 +182,14 @@ body {
   padding: 10px;
 }
 
+.user-bookmarks-button,
+.user-basket-button {
+  width: 30px;
+  height: 30px;
+  background-color: #63a63e;
+}
+
 .button-order {
-  margin: 10px 0 18px;
   padding: 12px 10px;
   border-radius: 4px;
   background: #63a63e;
@@ -204,28 +217,60 @@ body {
 }
 
 .submenu-card {
+  position: relative;
   width: 370px;
   min-height: content;
+}
+
+.submenu-card::before {
+  position: absolute;
+  content: "";
+  top: 45px;
+  right: 37px;
+  width: 90px;
+  height: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card-materials {
   grid-area: a;
 }
 
+.card-materials::before {
+  background-image: url("/images/icon-paints-white.svg");
+}
+
 .card-tool {
   grid-area: b;
+}
+
+.card-tool::before {
+  background-image: url("/images/icon-tool.svg");
 }
 
 .card-technic {
   grid-area: c;
 }
 
+.card-technic::before {
+  background-image: url("/images/icon-equipment.svg");
+}
+
 .card-discounts {
   grid-area: d;
 }
 
+.card-discounts::before {
+  background-image: url("/images/icon-sale-white.svg");
+}
+
 .card-delivery {
   grid-area: e;
+}
+
+.submenu .card-delivery::before {
+  background-image: url("/images/icon-delivery-white.svg");
 }
 
 .submenu-card-title {
@@ -288,7 +333,7 @@ body {
   height: 50px;
   border-radius: 50px;
   background-color: rgba(41, 52, 73, 0.6);
-  background-image: url("/images/slider-arrow.svg");
+  background-image: url("/images/graphics/slider-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -356,6 +401,10 @@ body {
 .catalog {
   margin: 0 auto;
   max-width: 1170px;
+}
+
+.catalog-title {
+  max-width: 500px;
 }
 
 .catalog-container {
@@ -562,7 +611,7 @@ body {
   left: 7px;
   width: 10px;
   height: 10px;
-  background-image: url("/images/checkbox-check-mark.svg");
+  background-image: url("/images/graphics/checkbox-check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -616,12 +665,16 @@ body {
 }
 
 .filter-products-button {
-  width: 210px;
-  margin-top: 5px;
-  margin-left: 8px;
-  z-index: 1;
-  font-size: 18px;
-  line-height: 21px;
+  padding: 12px 0 11px;
+  width: 220px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 2px solid #3d546f;
+  color: #3d546f;
 }
 
 /* сортировка */
@@ -631,6 +684,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   min-width: 280px;
+  max-width: 280px;
   border-radius: 2px;
   border: 1px solid #3d546f;
   margin: 0;
@@ -789,6 +843,7 @@ body {
 }
 
 .loading-button {
+  width: 200px;
   margin-left: 17px;
   padding: 14px 38px 13px;
   border-radius: 2px;
@@ -903,8 +958,7 @@ body {
 
 .contacts-link {
   display: block;
-  margin: 0;
-  margin-top: 52px;
+  margin: 52px 0 10px;
   padding: 14px 45px;
   max-width: 197px;
   font-size: 14px;
@@ -952,6 +1006,36 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   opacity: 0.1;
+}
+
+.subscription-form-footer {
+  display: flex;
+}
+
+.input-field-footer {
+  font-size: 14px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  line-height: 18px;
+  padding: 10px 16px;
+  width: 223px;
+  border-radius: 2px;
+  border: 1px solid #63A63E;
+  background-color: #ffffff;
+}
+
+.input-field-footer::placeholder {
+  font-size: 14px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  line-height: 18px;
+  color: #bdbdbdbd;
+}
+
+.subscription-form-button {
+  margin-left: -3px;
+  width: 40px;
+  height: 40px;
+  background-color: #63a63e;
+  border-radius: 2px;
 }
 
 .footer-lower-container {
