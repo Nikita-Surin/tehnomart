@@ -745,11 +745,21 @@ body {
   width: 70px;
   height: 70px;
   background-image: url("/images/new.svg");
+  z-index: 2;
 }
 
 .product-card-image-container {
+  position: relative;
   width: 216px;
   height: 180px;
+}
+
+.product-card-button {
+  position: absolute;
+  width: 135px;
+  height: 40px;
+  background: #63a63e;
+  z-index: 1;
 }
 
 .product-content-container {
