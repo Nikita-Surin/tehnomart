@@ -136,7 +136,7 @@ body {
   margin-bottom: -5px;
   width: 220px;
   height: 50px;
-  flex-shrink: 0;
+  z-index: 1;
 }
 
 .user-search {
@@ -191,11 +191,20 @@ body {
   max-width: 903px;
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
 }
 
 .page-navigation-link {
-  padding: 10px;
+  padding: 21px 26px 24px;
+}
+
+.page-navigation-link:hover {
+  color: #c5c5c5;
+  background: #32425c;
+}
+
+.page-navigation-link:active {
+  color: #ffffff;
+  background-color: #32425c;
 }
 
 .user-bookmarks-button,
@@ -215,15 +224,38 @@ body {
   background-image: url("/images/graphics/icon-cart-18x18.svg");
 }
 
+.user-bookmarks-button:hover,
+.user-basket-button:hover {
+  opacity: 1;
+}
+
+.user-bookmarks-button:focus-visible,
+.user-basket-button:focus-visible {
+  opacity: 1;
+}
+
+.user-bookmarks-button:active,
+.user-basket-button:active {
+  opacity: 0.3;
+}
+
 .button-order {
   padding: 12px 10px;
   border-radius: 4px;
-  background: #63a63e;
+  background-color: #63a63e;
   width: 170px;
   flex-shrink: 0;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.button-order:hover {
+  background-color: #5fbb2d;
+}
+
+.button-order:active {
+  background-color: #518534;
 }
 
 /* основное содержимое index */
@@ -335,6 +367,19 @@ body {
   transform: translateY(-50%);
 }
 
+.submenu-card-link:hover {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.submenu-card-link:focus-visible {
+
+}
+
+.submenu-card-link:active {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.6;
+}
+
 .card-yellow {
   background: #ffbf47;
 }
@@ -376,6 +421,18 @@ body {
   background-image: url("/images/graphics/slider-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.slider-button:hover {
+  background-color: #293449;
+}
+
+.slider-button:focus-visible {
+  background-color: #293449;
+}
+
+.slider-button:active {
+  opacity: 0.6;
 }
 
 .slider-next {
@@ -432,8 +489,20 @@ body {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
-  background: #ee3643;
+  background-color: #ee3643;
   color: #ffffff;
+}
+
+.link-slider:hover {
+  background-color: #ca2c37;
+}
+
+.link-slider:focus-visible {
+
+}
+
+.link-slider:active {
+  background-color: #ba2732;
 }
 
 .slider-pagination {
@@ -831,7 +900,19 @@ body {
 
 .product-card-button-basket {
   top: 27px;
-  background: #63a63e;
+  background-color: #63a63e;
+}
+
+.product-card-button-basket:hover {
+  background-color: #5fbb2d;
+}
+
+.product-card-button-basket:focus-visible {
+  
+}
+
+.product-card-button-basket:active {
+  background-color: #518534;
 }
 
 .product-card-button-bookmarks {
@@ -840,6 +921,19 @@ body {
   border: 2px solid #63a63e;
   color: #32425c;
   background-color: #ffffff;
+}
+
+.product-card-button-bookmarks:hover {
+border-color: #3d546f;
+}
+
+.product-card-button-bookmarks:focus-visible {
+
+}
+
+.product-card-button-bookmarks:active {
+  color: #c5c5c5;
+  border-color: #c5c5c5;
 }
 
 .product-content-container {
@@ -886,6 +980,7 @@ body {
 }
 
 .product-card-price {
+  position: relative;
   margin-top: 11px;
   padding: 11px 0;
   width: 139px;
@@ -893,11 +988,49 @@ body {
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 2px;
-  border-radius: 2px;
   text-transform: uppercase;
-  background-image: url("/images/product-card-price-button.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.product-card-price::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #ee3643;
+  z-index: -1;
+}
+
+.product-card-price::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 6px;
+  transform: rotate(45deg);
+  clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+  width: 28px;
+  height: 28px;
+  border-radius: 2px;
+  background-color: #ee3643;
+  z-index: -1;
+}
+
+.product-card-price:hover::before,
+.product-card-price:hover::after {
+  background-color: #ca2c37;
+}
+
+.product-card-price:focus-visible::before,
+.product-card-price:focus-visible::after {
+  
+}
+
+.product-card-price:active::before,
+.product-card-price:active::after {
+  background-color: #ba2732;
 }
 
 .product-card-link:hover {
@@ -951,7 +1084,19 @@ body {
   margin-left: 17px;
   padding: 14px 38px 13px;
   border-radius: 2px;
-  background: #ee3643;
+  background-color: #ee3643;
+}
+
+.loading-button:hover {
+  background-color: #ca2c37;
+}
+
+.loading-button:focus-visible {
+
+}
+
+.loading-button:active {
+  background-color: #ba2732;
 }
 
 /* секция информации */
@@ -1070,7 +1215,19 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 2px;
-  background-color: #EE3643;
+  background-color: #ee3643;
+}
+
+.contacts-link:hover {
+  background-color: #ca2c37;
+}
+
+.contacts-link:focus-visible {
+
+}
+
+.contacts-link:active {
+  background-color: #ba2732;
 }
 
 .map-link {
@@ -1107,13 +1264,10 @@ body {
 .link-social {
   position: relative;
   display: block;
-  width: 33px;
-  height: 33px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .link-social::before {
@@ -1124,20 +1278,25 @@ body {
   transform: translate(-50%, -50%);
   width: 36px;
   height: 36px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.link-social-pinterest {
+.link-social-pinterest::before {
   background-image: url("/images/graphics/pin.svg");
 }
 
-.link-social-vk {
+.link-social-vk::before {
   background-image: url("/images/graphics/vk.svg");
 }
 
-.link-social-vsco {
+.link-social-vsco::before {
   background-image: url("/images/graphics/vsco.svg");
+}
+
+.link-social:hover {
+  background-color: #293449;
 }
 
 .right-container {
@@ -1197,6 +1356,18 @@ body {
   background-image: url("/images/graphics/icon-cart-18x18.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.subscription-form-button:hover {
+  background-color: #5fbb2d;
+}
+
+.subscription-form-button:focus-visible {
+  
+}
+
+.subscription-form-button:active {
+  background-color: #518534;
 }
 
 .footer-lower-container {
