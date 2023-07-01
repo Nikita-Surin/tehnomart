@@ -207,7 +207,9 @@ body {
 }
 
 .user-search-button:focus-visible {
-  
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .user-search-button:active {
@@ -261,7 +263,7 @@ body {
 }
 
 .input-field-search::-webkit-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -269,7 +271,7 @@ body {
 }
 
 .input-field-search::-moz-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -277,7 +279,7 @@ body {
 }
 
 .input-field-search:-ms-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -285,7 +287,7 @@ body {
 }
 
 .input-field-search::-ms-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -293,7 +295,7 @@ body {
 }
 
 .input-field-search::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -341,7 +343,9 @@ body {
 }
 
 .user-access-button:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .user-access-button:active {
@@ -390,7 +394,9 @@ body {
 }
 
 .user-access-button-login:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .user-access-button-login:active {
@@ -419,7 +425,7 @@ body {
   display: block;
   margin: 12px 0 45px 20px;
   font-size: 24px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
@@ -440,7 +446,9 @@ body {
 }
 
 .popover-close:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .popover-close:active {
@@ -472,7 +480,7 @@ body {
 
 .input-field-login::-webkit-input-placeholder {
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -481,7 +489,7 @@ body {
 
 .input-field-login::-moz-placeholder {
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -490,7 +498,7 @@ body {
 
 .input-field-login:-ms-input-placeholder {
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -499,7 +507,7 @@ body {
 
 .input-field-login::-ms-input-placeholder {
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -508,7 +516,7 @@ body {
 
 .input-field-login::placeholder {
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -522,7 +530,7 @@ body {
 .link-login-support {
   margin-left: 22px;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -534,7 +542,9 @@ body {
 }
 
 .link-login-support:focus-visible {
-  
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .link-login-support:active {
@@ -838,7 +848,9 @@ body {
 }
 
 .submenu-card-link:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .submenu-card-link:active {
@@ -976,7 +988,9 @@ body {
 }
 
 .link-slider:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .link-slider:active {
@@ -1011,7 +1025,9 @@ body {
 }
 
 .slider-pagination-button:focus-visible:not(.slider-pagination-button-current) {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .slider-pagination-button:active:not(.slider-pagination-button-current) {
@@ -1412,7 +1428,9 @@ body {
 }
 
 .filter-products-button:focus-visible {
-  
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .filter-products-button:active {
@@ -1549,7 +1567,9 @@ body {
 
 .product-card-button-basket:focus-visible,
 .product-card-button-enter:focus-visible {
-  
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .product-card-button-basket:active,
@@ -1573,7 +1593,9 @@ outline-color: #3d546f;
 
 .product-card-button-bookmarks:focus-visible,
 .product-card-button-registration:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .product-card-button-bookmarks:active,
@@ -1675,7 +1697,9 @@ outline-color: #3d546f;
 
 .product-card-price:focus-visible::before,
 .product-card-price:focus-visible::after {
-  
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .product-card-price:active::before,
@@ -1750,7 +1774,9 @@ outline-color: #3d546f;
 }
 
 .loading-button:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .loading-button:active {
@@ -1896,7 +1922,9 @@ outline-color: #3d546f;
 }
 
 .contacts-link:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .contacts-link:active {
@@ -1974,6 +2002,17 @@ outline-color: #3d546f;
   background-color: #293449;
 }
 
+.link-social:focus-visible {
+  border-radius: 50%;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
+}
+
+.link-social:active {
+  background-color: #293449;
+  opacity: 0.3;
+}
+
 .right-container {
   margin-top: 15px;
   display: flex;
@@ -2016,7 +2055,9 @@ outline-color: #3d546f;
 }
 
 .link-htmlacademy:focus-visible {
-
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .link-htmlacademy:active {
@@ -2094,7 +2135,9 @@ outline-color: #3d546f;
 }
 
 .subscription-form-button:focus-visible {
-  
+  border-radius: 2px;
+  outline: 2px solid #c5c5c5;
+  outline-offset: 1px;
 }
 
 .subscription-form-button:active {
@@ -2113,4 +2156,26 @@ outline-color: #3d546f;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+}
+
+.input-field:hover:not(.input-field-search) {
+  border: 1px solid #63a63e;
+}
+
+.input-field:focus-visible:not(.input-field-search) {
+  border: 1px solid #63a63e;
+  outline: 1px solid #ffbf47;
+}
+
+.input-field-error {
+  border: 1px solid #ee3643;
+}
+
+.input-field:hover {
+  border: 2px solid #ee3643;
+}
+
+.input-field:disabled {
+  opacity: 0.5;
+  background: #f1f5f7;
 }
