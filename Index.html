@@ -26,17 +26,54 @@
             <img class="page-navigation-logo" src="/images/logo.svg" width="220" height="50" alt="Логотип «Техномарт».">
           </a>
           <div class="user-search">
-            <button class="button user-search-button" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#fff" fill-rule="evenodd" d="M8 16a8 8 0 1 1 6.32-3.1l5.39 5.4-1.42 1.4-5.38-5.38A7.97 7.97 0 0 1 8 16Zm6-8A6 6 0 1 1 2 8a6 6 0 0 1 12 0Z" clip-rule="evenodd" opacity=".3"/></svg>              <span class="visually-hidden">Поиск.</span>
-            </button>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="subscription-form subscription-form-search" action="https://echo.htmlacademy.ru/" method="post">
               <!-- для отображения ошибки поля ввода добавь класс .input-field-error для поля ввода -->
-              <input class="input-field input-field-search" type="search" name="search" aria-label="Поиск по сайту." required placeholder="Поиск:">
+              <input class="input-field input-field-search" type="search" name="search" id="search" aria-label="Поиск по сайту." required placeholder="Поиск:">
+              <label class="button user-search-button" for="search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill-rule="evenodd" d="M8 16a8 8 0 1 1 6.32-3.1l5.39 5.4-1.42 1.4-5.38-5.38A7.97 7.97 0 0 1 8 16Zm6-8A6 6 0 1 1 2 8a6 6 0 0 1 12 0Z" clip-rule="evenodd"/ fill="currentColor"></svg>
+                <span class="visually-hidden">Поиск.</span>
+              </label>
             </form>
           </div>
-          <button class="button user-access-button" type="button">
+          <!-- для отобрадения зарегистрированного пользователя добавь класс .user-access-button-active необходимой кнопке снизу -->
+          <button class="button user-access user-access-button user-access-button-active" type="button">
             Войти
           </button>
+          <!-- для отображения поповера добавь блоку класс .popover-login-active -->
+          <div class="popover popover-login">
+            <span class="popover-title">Личный кабинет</span>
+            <button class="button popover-close" type="button">
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
+            <form class="subscription-form subscription-form-login" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="input-field input-field-login" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="Логин">
+              <input class="input-field input-field-login" type="password" name="password" aria-label="Введите ваш пароль." required placeholder="Пароль">
+              <div class="popover-login-container">
+                <div class="login-support">
+                  <a class="link link-login-support link-login-support-password" href="#">Запомнить меня</a>
+                  <a class="link link-login-support" href="#">Забыл пароль</a>
+                </div>
+                <button class="button subscription-form-login-button product-card-button-enter" type="submit">Войти</button>
+                <button class="button subscription-form-login-button product-card-button-registration" type="submit">Регистрация</button>
+              </div>
+            </form>
+          </div>
+          <button class="button user-access user-access-button-login" type="button">
+            Равшан Джамшутович
+          </button>
+          <div class="popover popover-login popover-login-active">
+            <span class="popover-title popover-title-authorized">Здравствуйте,<br>Равшан Джамшутович</span>
+            <button class="button popover-close" type="button">
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
+            <div class="popover-login-container">
+              <div class="login-support login-support-authorized-container">
+                <a class="link link-login-support link-login-support-authorized" href="#">мои заказы</a>
+                <a class="link link-login-support link-login-support-authorized" href="#">личный кабинет</a>
+              </div>
+              <button class="button subscription-form-login-button product-card-button-registration product-card-button-authorized" type="submit">выйти</button>
+              </div>
+          </div>
         </div>
       </div>
       <div class="page-header-navigation-container">
@@ -66,12 +103,13 @@
               </li>
             </ul>
           </nav>
+          <!-- для отображения значения количества товара в закладках или корзине добавь числовое значение в кнопку после svg-картинки -->
           <button class="button user-bookmarks-button" type="button">
-            <!-- <svg></svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path fill="#fff" fill-rule="evenodd" d="m2.06 18 7.2-3.06 7.2 3.06V1.75C16.46.78 15.54 0 14.4 0H4.11C2.98 0 2.06.78 2.06 1.75V18Zm7.2-5L4.1 15.16V1.75H14.4v13.42L9.26 13Z" clip-rule="evenodd"/></svg>
             <span class="visually-hidden">Закладки.</span>
           </button>
           <button class="button user-basket-button" type="button">
-            <!-- <svg></svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none"><path fill="#fff" fill-rule="evenodd" d="M3.65 1.8c-.16 0-.31.02-.46.05-.2-.44-.46-.83-.76-1.14C1.92.21 1.1 0 0 0v1.8c.68 0 1.07.1 1.16.19.34.34.63 1.03.63 1.61l.01.13.88 6.17A2.8 2.8 0 0 0 0 12.56v.94a2.82 2.82 0 0 0 2.64 2.7h.2a2.7 2.7 0 0 0 5.08 0h2.1a2.7 2.7 0 0 0 5.23-.9 2.7 2.7 0 0 0-5.23-.9h-2.1a2.7 2.7 0 0 0-5.08 0H2.7c-.46-.03-.87-.44-.9-.95v-.85a.99.99 0 0 1 .94-.9h10.83l.13-.04a2.36 2.36 0 0 0 1.48-1.4l.1-.19.3-.6a1348.33 1348.33 0 0 0 2.29-4.6c.54-1.22-.56-2.15-1.68-2.17L3.65 1.8Zm9.6 8.1H4.58a.15.15 0 0 1-.11-.13L3.6 3.6l12.45.9-1.14 2.27v.03l-.94 1.85-.3.61-.12.23-.05.1a.56.56 0 0 1-.26.31Zm-.7 6.3a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8Zm-6.27-.9a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z" clip-rule="evenodd"/></svg>
             <span class="visually-hidden">Корзина.</span>
           </button>
           <button class="button button-order" type="button">Оформить заказ</button>
@@ -81,8 +119,9 @@
     <!--основное содержимое-->
     <main class="main-index">
       <section class="submenu">
+        <!-- Для того что бы на карточке появилась метка "NEW" добавь class="new" для блока <div class="submenu-card"> -->
         <h2 class="visually-hidden">Популярные категории.</h2>
-        <div class="submenu-card card-materials card-yellow">
+        <div class="submenu-card card-materials card-yellow new">
           <p class="submenu-card-title">материалы</p>
           <a class="link submenu-card-link" href="#">на любой вкус</a>
         </div>
@@ -222,19 +261,19 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-products-group filter-container filter-container-bluetooth">
-                <legend class="filter-title filter-title-bluetooth">Питание</legend>
+              <fieldset class="filter-products-group filter-container filter-container-power">
+                <legend class="filter-title filter-title-power">Питание</legend>
                 <ul class="filter-products-list clear-list">
-                  <li class="filter-products-item filter-products-item-bluetooth">
+                  <li class="filter-products-item filter-products-item-power">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
+                      <input class="visually-hidden control-input" type="radio" name="power" value="yes" checked>
                       <span class="control-mark-radio"></span>
                       <span class="control-text">Аккумуляторные</span>
                     </label>
                   </li>
-                  <li class="filter-products-item filter-products-item-bluetooth">
+                  <li class="filter-products-item filter-products-item-power">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
+                      <input class="visually-hidden control-input" type="radio" name="power" value="no">
                       <span class="control-mark-outline control-mark-radio"></span>
                       <span class="control-text">Сетевые</span>
                     </label>
@@ -452,7 +491,7 @@
             </div>
             <div class="services-card card-guarantee">
               <h3 class="services-card-title">Гарантия</h3>
-              <p class="services-card-description">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимось товара</p>
+              <p class="services-card-description services-card-description-guarantee">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты,<br>и мы полностью возместим вам стоимось товара</p>
             </div>
             <div class="services-card card-credit">
               <h3 class="services-card-title">Кредит</h3>
@@ -471,7 +510,7 @@
         </div>
         <div class="contacts-container">
           <h3 class="contacts-title">Контакты</h3>
-          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <p class="contacts-description contacts-description-map">Вы можете забрать товар сами,&ensp;заехав в наш офис:</p>
           <a class="link map-link" href="https://yandex.ru/maps">
             <img src="/images/map.jpg" width="500" height="347" alt="Наше местоположения на карте.">
           </a>
@@ -484,7 +523,7 @@
         <div class="page-footer-container">
           <div class="left-container">
             <a class="link page-navigation-link-logo" href="#">
-              <img class="page-navigation-logo" src="/images/logo.svg" width="220" height="50" alt="Логотип «Техномарт».">
+              <img class="page-navigation-logo" src="/images/logo.svg" width="220" height="56" alt="Логотип «Техномарт».">
             </a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
             <ul class="clear-list footer-social-list">
@@ -520,8 +559,8 @@
       </div>
       <div class="footer-lower-container">
         <div class="page-footer-container">
-          <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-          <p>Разработано — <a class="link link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          <p class="footer-lower-description">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+          <p class="footer-lower-description">Разработано — <a class="link link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </div>
     </footer>
